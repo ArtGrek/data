@@ -1,0 +1,21 @@
+{
+  "command": "login",
+  "modes": [
+    "auto",
+    "play"
+  ],
+  "request_id": "28ae5ee1-a824-4634-8358-bcab13e3ce74",
+  "server-ver": "1.44.11-9348d0f1",
+  "session_id": "04d1923972bc43a9a629302732728d65",
+  "status": {
+    "code": "OK"
+  },
+  "user": {
+    "balance": 100000,
+    "balance_version": 1,
+    "currency": "FUN",
+    "huid": "demo-106758a99a3346fba872f844aa187a8c",
+    "show_balance": true
+  },
+  "user-id": -1
+}

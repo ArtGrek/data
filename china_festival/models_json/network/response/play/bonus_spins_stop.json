@@ -1,0 +1,96 @@
+{
+  "command": "play",
+  "context": {
+    "actions": [
+      "spin",
+      "buy_spin"
+    ],
+    "current": "spins",
+    "last_action": "bonus_spins_stop",
+    "last_args": {},
+    "last_win": 682500,
+    "round_finished": true,
+    "spins": {
+      "bac": {
+        "1": [
+          0,
+          0
+        ],
+        "2": [
+          4,
+          2
+        ],
+        "3": [
+          0,
+          0
+        ]
+      },
+      "bac_win": false,
+      "bet_per_line": 150,
+      "board": [
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          11,
+          3
+        ],
+        [
+          5,
+          8,
+          8
+        ],
+        [
+          4,
+          13,
+          5
+        ]
+      ],
+      "bs_count": 0,
+      "is_lucky_spin": false,
+      "lines": 25,
+      "paid": false,
+      "round_bet": 3000,
+      "round_win": 0,
+      "spin_type": 4,
+      "total_win": 682500
+    },
+    "version": 1
+  },
+  "modes": [
+    "auto",
+    "play"
+  ],
+  "origin_data": {
+    "autogame": true,
+    "command": "play",
+    "feature": true,
+    "mobile": "0",
+    "portrait": false,
+    "prev_request_id": "4aa94234-c494-4974-9345-5f1bee389809",
+    "quickspin": 2,
+    "set_denominator": 1,
+    "sound": false
+  },
+  "request_id": "07cb604b-d222-4c3d-b898-46b5aee013b3",
+  "roundnum": "2505161000003729258",
+  "session_id": "54d657fdddea4c76800b216371ea868e",
+  "status": {
+    "code": "OK"
+  },
+  "user": {
+    "balance": 770350,
+    "balance_version": 57,
+    "currency": "FUN",
+    "huid": "demo-88fb2ae9a9fb434c9407a6322c941377",
+    "show_balance": true
+  }
+}

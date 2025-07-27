@@ -1,0 +1,241 @@
+{
+  "command": "play",
+  "context": {
+    "actions": [
+      "respin"
+    ],
+    "bonus": {
+      "bac": [
+        2,
+        2
+      ],
+      "back_to": "spins",
+      "bet_per_line": 1,
+      "board": [
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "bonus_game_type": 1,
+      "bs_count": 4,
+      "bs_v": [
+        [
+          0,
+          0,
+          0,
+          0,
+          20,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10.0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          20,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          80,
+          0
+        ]
+      ],
+      "bs_values": [
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0.5,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          4,
+          0
+        ]
+      ],
+      "collect_values": [
+        {
+          "bs_v": 60.0,
+          "pos": [
+            2,
+            4
+          ]
+        }
+      ],
+      "current_win": 0,
+      "lines": 1,
+      "mps_": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "mults_": [],
+      "orig_board": [
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "round_bet": 20,
+      "round_win": 0,
+      "rounds_count": 0,
+      "rounds_granted": 3,
+      "rounds_left": 3,
+      "total_win": 0,
+      "unlock_row_idx": 3
+    },
+    "current": "bonus",
+    "last_action": "bonus_init",
+    "last_args": {},
+    "last_win": 0,
+    "round_finished": false,
+    "version": 1
+  },
+  "modes": [
+    "auto",
+    "play"
+  ],
+  "origin_data": {
+    "autogame": true,
+    "command": "play",
+    "feature": true,
+    "mobile": "0",
+    "portrait": false,
+    "prev_request_id": "01c6c84b-2b58-4d3a-85ca-a14faa0411c6",
+    "quickspin": 2,
+    "set_denominator": 1,
+    "sound": false
+  },
+  "request_id": "5513d70b-f0b0-41e8-bc03-907809dfa116",
+  "roundnum": "2505181000005471265",
+  "session_id": "577040c7bf0b4dc18036a41bc4527fb7",
+  "status": {
+    "code": "OK"
+  },
+  "user": {
+    "balance": 99760,
+    "balance_version": 16,
+    "currency": "FUN",
+    "huid": "demo-e55b3f9a0a5f4e42ac8114faaf0d413f",
+    "show_balance": true
+  }
+}

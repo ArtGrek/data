@@ -1,0 +1,22 @@
+{
+  "action": {
+    "name": "bonus_spins_stop",
+    "params": {
+      "bet_factor": 20,
+      "bet_per_line": 1,
+      "lines": 1,
+      "selected_mode": "3"
+    }
+  },
+  "autogame": true,
+  "command": "play",
+  "mobile": "0",
+  "portrait": false,
+  "prev_client_command_time": 72440,
+  "prev_request_id": "3d3f0c6e-185b-4af1-ad36-7c25911cc866",
+  "quick_spin": 2,
+  "request_id": "f03c8a1d-558b-474b-91e1-0539fbaabcba",
+  "session_id": "577040c7bf0b4dc18036a41bc4527fb7",
+  "set_denominator": 1,
+  "sound": false
+}

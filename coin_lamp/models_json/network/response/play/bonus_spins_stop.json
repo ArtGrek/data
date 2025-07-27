@@ -1,0 +1,159 @@
+{
+  "command": "play",
+  "context": {
+    "actions": [
+      "spin",
+      "buy_spin"
+    ],
+    "current": "spins",
+    "last_action": "bonus_spins_stop",
+    "last_args": {},
+    "last_win": 160,
+    "round_finished": true,
+    "spins": {
+      "bac": [
+        2,
+        2
+      ],
+      "bac_win": false,
+      "bet_per_line": 1,
+      "board": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "bonus_game_type": 0,
+      "bs_v": [
+        [
+          0,
+          20,
+          0
+        ],
+        [
+          0,
+          10.0,
+          0
+        ],
+        [
+          0,
+          20,
+          0
+        ],
+        [
+          0,
+          80,
+          0
+        ]
+      ],
+      "bs_values": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0.5,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          4,
+          0
+        ]
+      ],
+      "lines": 1,
+      "mps_": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "mults_": [],
+      "paid": false,
+      "progress": [
+        {
+          "bet": "20",
+          "data": [
+            [
+              2,
+              2,
+              5
+            ]
+          ]
+        }
+      ],
+      "round_bet": 20,
+      "round_win": 0,
+      "total_win": 160
+    },
+    "version": 1
+  },
+  "modes": [
+    "auto",
+    "play"
+  ],
+  "origin_data": {
+    "autogame": true,
+    "command": "play",
+    "feature": true,
+    "mobile": "0",
+    "portrait": false,
+    "prev_request_id": "3d3f0c6e-185b-4af1-ad36-7c25911cc866",
+    "quickspin": 2,
+    "set_denominator": 1,
+    "sound": false
+  },
+  "request_id": "f03c8a1d-558b-474b-91e1-0539fbaabcba",
+  "roundnum": "2505181000005471265",
+  "session_id": "577040c7bf0b4dc18036a41bc4527fb7",
+  "status": {
+    "code": "OK",
+    "type": "exceed"
+  },
+  "user": {
+    "balance": 99920,
+    "balance_version": 25,
+    "currency": "FUN",
+    "huid": "demo-e55b3f9a0a5f4e42ac8114faaf0d413f",
+    "show_balance": true
+  }
+}

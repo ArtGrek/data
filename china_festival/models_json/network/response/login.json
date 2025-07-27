@@ -1,0 +1,23 @@
+{
+  "command": "login",
+  "modes": [
+    "auto",
+    "play"
+  ],
+  "request_id": "7df5da8e-afbd-4969-9c85-d67386ade182",
+  "server-ver": "1.44.11-9348d0f1",
+  "session_id": "54d657fdddea4c76800b216371ea868e",
+  "status": {
+    "code": "OK",
+    "traceback": "crit (0) PlayerGUID is empty on connect [parsePlayerGUID(/opt/source/server/modules/common_server/cm/TCmConnect.cpp:452)]",
+    "type": "crit"
+  },
+  "user": {
+    "balance": 100000,
+    "balance_version": 1,
+    "currency": "FUN",
+    "huid": "demo-88fb2ae9a9fb434c9407a6322c941377",
+    "show_balance": true
+  },
+  "user-id": -1
+}

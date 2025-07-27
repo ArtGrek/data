@@ -1,0 +1,27 @@
+
+el_bonus_feature_explosion.webp
+size: 813,375
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bonus_shine
+  rotate: false
+  xy: 0, 0
+  size: 375, 375
+  orig: 375, 375
+  offset: 0, 0
+  index: -1
+line_glow_2
+  rotate: false
+  xy: 385, 0
+  size: 375, 375
+  orig: 375, 375
+  offset: 0, 0
+  index: -1
+star_1
+  rotate: false
+  xy: 770, 0
+  size: 43, 43
+  orig: 49, 51
+  offset: 3, 4
+  index: -1

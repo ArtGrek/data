@@ -1,0 +1,17 @@
+{
+  "action": {
+    "name": "respin",
+    "params": {}
+  },
+  "autogame": true,
+  "command": "play",
+  "mobile": "0",
+  "portrait": false,
+  "prev_client_command_time": 282,
+  "prev_request_id": "c6a22a27-a9f4-4b6b-bc5e-7ddf8a9679f1",
+  "quick_spin": 2,
+  "request_id": "bcba8f61-359f-4dc8-a609-a810f768260d",
+  "session_id": "04d1923972bc43a9a629302732728d65",
+  "set_denominator": 1,
+  "sound": false
+}

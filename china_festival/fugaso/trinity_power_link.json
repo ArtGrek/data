@@ -1,0 +1,371 @@
+{
+    "stopFactor": 10000,
+    "betCounters": [
+        1,
+        100,
+        200
+    ],
+    "distBuy": [{
+        "100": "Add",
+        "200": "Twice",
+        "300": "Cluster",
+        "400": "AddTwice",
+        "500": "TwiceCluster",
+        "600": "AddCluster"
+    }, {
+        "100": "AddTwice",
+        "200": "TwiceCluster",
+        "300": "AddCluster",
+        "400": "AddTwiceCluster"
+    }],
+    "distRespin": {
+        "AddTwiceCluster": [4, 100],
+        "Twice": [4, 100],
+        "AddCluster": [4, 100],
+        "Add": [4, 100],
+        "Cluster": [4, 100],
+        "TwiceCluster": [4, 100],
+        "AddTwice": [4, 100]
+    },
+    "distCoin": {
+        "936": 10,
+        "2947": 20,
+        "4774": 30,
+        "6252": 40,
+        "7313": 60,
+        "8009": 100,
+        "8570": 120,
+        "8943": 160,
+        "9276": 200,
+        "9539": 300,
+        "9705": 600,
+        "9788": 2000
+    },
+    "distBaseCategory": {
+        "7172": 0,
+        "7592": 1,
+        "8062": 2,
+        "8529": 3,
+        "8994": 4,
+        "9469": 5,
+        "9930": 6,
+        "9937": 7,
+        "9944": 8,
+        "9952": 9,
+        "9959": 10,
+        "9965": 11,
+        "9971": 12,
+        "9979": 13,
+        "9986": 14,
+        "10000": 15
+    },
+    "distSymbol":[1125, 10000],
+    "distMystery": {
+        "2185": "K",
+        "6350": "L",
+        "8845": "M",
+        "9774": "N"
+    },
+    "distBombs": [{
+        "100": 1
+    }, {
+        "25": 1,
+        "100": 0
+    }, {
+        "20": 1,
+        "100": 0
+    }, {
+        "15": 1,
+        "100": 0
+    }, {
+        "10": 1,
+        "100": 0
+    }, {
+        "5": 1,
+        "100": 0
+    }],
+    "distBonus": {
+        "Add": {
+            "100": "K"
+        },
+        "Twice": {
+            "100": "L"
+        },
+        "Cluster": {
+            "100": "M"
+        },
+        "AddTwice": {
+            "100": "K",
+            "200": "L"
+        },
+        "AddCluster": {
+            "100": "K",
+            "200": "M"
+        },
+        "TwiceCluster": {
+            "100": "L",
+            "200": "M"
+        },
+        "AddTwiceCluster": {
+            "100": "K",
+            "200": "L",
+            "300": "M"
+        }
+    },
+    "reels": [
+        [
+            "AAAHBBBFFFFCCCCGEDCGEEEFAAAIEDAIBDCHEEEHHHBDCGBBBFDDDHCDAGGG",
+            "AAAFCAECBJJJJJJJJJCCCCEGBBBBAGGGEEEEEIIIICDDDDFFFBADDDHHHHBA",
+            "AAAJCCCHHHADDDDCHDDDJBBBBGGGCEACFEEEEJJJJJJJJACFFFEAGBBBIIIE",
+            "AAAHBFFFFDDDDDDJJJJJJJJJJJEEEEFCIEGGGGBBBBHCCCCGAAAIIIBHCFEG",
+            "AAAFFFHHHEEEJJJJJJJJJJDDDIABHEEEFFFCGGGACGBHDDDGBBBBHCCCCGA"
+        ],
+        [
+            "AAAAAAIEEEEEEEEEEIAAAAAAIEEEEEEEIAAAAIIIIIIAAAAIIIIEEEEEEIIIIAA",
+            "BBBBFFFFFFGGGGGGBBBBJJJJJJJJJJBBBBFFFFFFGGGGGGJJJJJJJJJBB",
+            "CCCCCCHHHHHHDDDDDDDDCCCCCCHDDDDDDHHHHHHCCCCCCHDDDDDDHHHHCC",
+            "AAAAIIIICCCCCCGGGGGDDDDDFFFFFFBBBBBJJJJJJJEEEEEHHHHHA",
+            "AAAAFFFFFEEEEEEIIIIBBBBBGGGGGGCCCCCCJJJJJJJDDDDDDHHHHHA"
+        ],
+        [
+            "AAAAAAIEEEEEEEEEIAAAAIEEEEEEIAAAAIIIIIIAAAAIIIIEEEEEEIIIIAA",
+            "BBBBBBGGGGGGBBBBBBGGGGGGBBBBBFFFFFFBBBBFFFFFFGGGGGGFFFFFFBB",
+            "CCCCCCJJJJJJJJJJCCCCCHHHHHHDDDDDDDJJJJJJJJDDDDDDHHHHHCC",
+            "AAAAIIIICCCCCGGGGGDDDDDFFFFFBBBBBJJJJJJJEEEEEHHHHHHAA",
+            "AAAAFFFFFFEEEEEEIIIIBBBBBGGGGGGCCCCCCJJJJJJJJDDDDDDHHHHHHAA"
+        ],
+        [
+            "CCCCCCFFFFFFFFFFCCCCCCHHHHHHHHHHFFFFFFFFCCCCCCHHHHHHHCCCC",
+            "AAAAJJJJJJJJJJAAAAJJJJJJJJJJDDDDDDDDIIIIIIAAAAIDDDDDDIIIIIIA",
+            "BBBBBBGEEEEEEEEGBBBBBBGGGGGGGGGGBBBBBEEEEEEGGGGGGEEEEEEBB",
+            "AAAAIIIICCCCCGGGGGGDDDDDFFFFFFBBBBBBJJJJJJJEEEEEHHHHHA",
+            "AAAAFFFFFFEEEEEEIIIIBBBBBGGGGGGCCCCCCJJJJJJJJDDDDDDHHHHHHAA"
+        ],
+        [
+            "CCCCCCFFFFFFFFFFCCCCCCHHHHHHHHHHFFFFFFFCCCCCCHHHHHHHHHCCCC",
+            "AAAAAIDDDDDDDDIAAAAIDDDDDDIAAAAIIIIIIAAAAIIIIIDDDDDDIIIIAA",
+            "BBBBBBJJJJJJJJJJBBBBBGGGGGGEEEEEEEJJJJJJJJGGGGGEEEEEEBB",
+            "AAAAIIIICCCCCCGGGGGDDDDDDFFFFFFBBBBBJJJJJJJEEEEEEHHHHHAA",
+            "AAAAFFFFFEEEEEIIIIBBBBBGGGGGGCCCCCJJJJJJJDDDDDHHHHHAA"
+        ],
+        [
+            "BBBBBBGGGGGGGGGGDDDDDDDBBBBGDDDDDDGBBBBGDDDDDDGBBBBGGGGGGBB",
+            "CCCCCCJJJJJJJJJJEEEEEJJJJJJJJJEEEEHCCCCCHHHHHHEEEEHHHHCC",
+            "AAAAAAIIIIIIIIIIAAAAAAFFFFFFFAAAAAAFFFFFFIIIIIIIIIFFFFFFAAAA",
+            "AAAAIIIICCCCCCGGGGGGDDDDDDFFFFFFBBBBBJJJJJJJEEEEEEHHHHHHAA",
+            "AAAAFFFFFEEEEEIIIIBBBBBGGGGGCCCCCJJJJJJJDDDDDHHHHHA"
+        ],
+        [
+            "BBBBBBGGGGGGGGGGDDDDDDDDBBBBGDDDDDDGBBBBGDDDDDDGBBBBGGGGGGBB",
+            "CCCCCHEEEEEEEEHCCCCHEEEEEEHCCCCHHHHHHCCCCHHHHHEEEEEEHHHHCC",
+            "AAAAAAIIIIIIFFFFFFJJJJJJJJJJIIIIIJJJJJJJJAAAAAAFFFFFFAA",
+            "AAAAIIIICCCCCGGGGGDDDDDDFFFFFBBBBBJJJJJJJEEEEEHHHHHHA",
+            "AAAAFFFFFEEEEEIIIIBBBBBGGGGGGCCCCCJJJJJJJDDDDDHHHHHHA"
+        ],
+        [
+            "AAA",
+            "AAAJJJ",
+            "AAAJJJ",
+            "AAAJJJ",
+            "AAAIJAAABJJJCAAADJJJEAAAFJJJGAAAHJJJI"
+        ],
+        [
+            "BBB",
+            "BBBJJJ",
+            "BBBJJJ",
+            "BBBJJJ",
+            "AJJJIBBBIJBBBDJJJCBBBFJJJEBBBHJJJGBB"
+        ],
+        [
+            "CCC",
+            "CCCJJJ",
+            "CCCJJJ",
+            "CCCJJJ",
+            "ACCCBJJJECCCDJJJGCCCFJJJICCCIJCCCHJJJ"
+        ],
+        [
+            "DDD",
+            "DDDJJJ",
+            "DDDJJJ",
+            "DDDJJJ",
+            "AJJJJCDDDBJJJEDDDFJJJGDDDHJJJIDDDIJDDDAJ"
+        ],
+        [
+            "EEE",
+            "EEEJJJ",
+            "EEEJJJ",
+            "EEEJJJ",
+            "AEEEBJJJJBEEEDJJJCEEEFJJJGEEEHJJJIEEEIJEEE"
+        ],
+        [
+            "CFFFFHFFFFGFFFDFFFCF",
+            "BJJJIFFFFJJJFFFCJJJHFFFBJ",
+            "AJJJJBFFFFJJJJGFFFFAJ",
+            "AJJJJBFFFFCJJJDFFFEJJJGFFFHJJJHFFFIJFFFAJ",
+            "AFFFBJJJJCFFFDJJJEFFFGJJJHFFFIJFFF"
+        ],
+        [
+            "AGGGIGGGHGGGFGGGEGGGDGGG",
+            "AGGGGBJJJJGGGDJJJIGGGCJJJAG",
+            "BJJJJCGGGGEJJJFGGGJJJHGGGBJ",
+            "AJJJBGGGCJJJDGGGEJJJFGGGHJJJIGGGIJGGG",
+            "AGGGAJJJJCGGGBJJJEGGGDJJJHGGGIJGGGFJJJAG"
+        ],
+        [
+            "AHHHIHHHGHHHFHHHBHHHAH",
+            "AHHHHJJJBHHHDJJJHHHEJJJAH",
+            "CJJJJDHHHHFJJJGHHHJJJIHHHCJ",
+            "AJJJJBHHHCJJJDHHHEJJJFHHHFJJJGHHHGJHHHAJ",
+            "AHHHHIJJJFHHHGJJJEHHHDJJJCHHHBJJJAH"
+        ],
+        [
+            "AIIIHIIIGIIIFIIICIIIBIII",
+            "BIIIIDJJJJCIIIEJJJIIIFJJJBI",
+            "AJJJJEIIIIDJJJGIIIJJJHIIIAJ",
+            "AJJJJHIIIIHJJJJGIIIIGJJJFIIIFJIIICJJ",
+            "AIIIAJJJJCIIIBJJJEIIIDJJJHIIIFJIIIGJJJAI"
+        ],
+        [
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO"
+        ],
+        [
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO"
+        ],
+        [
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO"
+        ],
+        [
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO",
+            "AAAAAAAAAAAAAAAAAAAAAAAAAANPOOO"
+        ]
+    ],
+    "lines": [
+        "-----",
+        "^^^^^",
+        "_____",
+        "^-_-^",
+        "_-^-_",
+        "-^^^-",
+        "-___-",
+        "^^-__",
+        "__-^^",
+        "-_-^-",
+        "-^-_-",
+        "^---^",
+        "_---_",
+        "^-^-^",
+        "_-_-_",
+        "--^--",
+        "--_--",
+        "^^_^^",
+        "__^__",
+        "^___^",
+        "_^^^_",
+        "-_^_-",
+        "-^_^-",
+        "^_^_^",
+        "_^_^_"
+    ],
+    "wins": {
+        "A": {
+            "3": 2,
+            "4": 4,
+            "5": 20
+        },
+        "B": {
+            "3": 2,
+            "4": 4,
+            "5": 20
+        },
+        "C": {
+            "3": 2,
+            "4": 4,
+            "5": 20
+        },
+        "D": {
+            "3": 2,
+            "4": 4,
+            "5": 20
+        },
+        "E": {
+            "3": 2,
+            "4": 4,
+            "5": 20
+        },
+        "F": {
+            "3": 5,
+            "4": 12,
+            "5": 30
+        },
+        "G": {
+            "3": 5,
+            "4": 12,
+            "5": 40
+        },
+        "H": {
+            "3": 5,
+            "4": 12,
+            "5": 50
+        },
+        "I": {
+            "3": 20,
+            "4": 40,
+            "5": 100
+        }
+    }
+}

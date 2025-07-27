@@ -1,0 +1,244 @@
+
+label_win_vfx.webp
+size: 1015,1330
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+counter_placeholder
+  rotate: true
+  xy: 955, 650
+  size: 200, 31
+  orig: 200, 31
+  offset: 0, 0
+  index: -1
+glow_back
+  rotate: false
+  xy: 0, 0
+  size: 429, 274
+  orig: 429, 274
+  offset: 0, 0
+  index: -1
+rays_1
+  rotate: false
+  xy: 0, 284
+  size: 200, 196
+  orig: 200, 200
+  offset: 0, 2
+  index: -1
+triangle
+  rotate: false
+  xy: 881, 159
+  size: 134, 131
+  orig: 134, 131
+  offset: 0, 0
+  index: -1
+vfx_win_00
+  rotate: false
+  xy: 325, 643
+  size: 201, 151
+  orig: 226, 167
+  offset: 19, 1
+  index: -1
+vfx_win_01
+  rotate: false
+  xy: 325, 804
+  size: 201, 154
+  orig: 226, 167
+  offset: 20, 1
+  index: -1
+vfx_win_02
+  rotate: false
+  xy: 536, 815
+  size: 200, 151
+  orig: 226, 167
+  offset: 21, 5
+  index: -1
+vfx_win_03
+  rotate: false
+  xy: 751, 489
+  size: 200, 151
+  orig: 226, 167
+  offset: 22, 5
+  index: -1
+vfx_win_04
+  rotate: false
+  xy: 210, 284
+  size: 218, 150
+  orig: 226, 167
+  offset: 5, 6
+  index: -1
+vfx_win_05
+  rotate: true
+  xy: 0, 490
+  size: 220, 150
+  orig: 226, 167
+  offset: 3, 6
+  index: -1
+vfx_win_06
+  rotate: false
+  xy: 439, 0
+  size: 222, 149
+  orig: 226, 167
+  offset: 1, 7
+  index: -1
+vfx_win_07
+  rotate: false
+  xy: 671, 0
+  size: 221, 149
+  orig: 226, 167
+  offset: 1, 7
+  index: -1
+vfx_win_08
+  rotate: true
+  xy: 0, 720
+  size: 219, 146
+  orig: 226, 167
+  offset: 1, 10
+  index: -1
+vfx_win_09
+  rotate: true
+  xy: 0, 949
+  size: 217, 144
+  orig: 226, 167
+  offset: 2, 12
+  index: -1
+vfx_win_10
+  rotate: false
+  xy: 439, 159
+  size: 213, 144
+  orig: 226, 167
+  offset: 4, 12
+  index: -1
+vfx_win_11
+  rotate: true
+  xy: 154, 976
+  size: 190, 153
+  orig: 226, 167
+  offset: 6, 2
+  index: -1
+vfx_win_12
+  rotate: false
+  xy: 734, 978
+  size: 191, 154
+  orig: 226, 167
+  offset: 7, 0
+  index: -1
+vfx_win_13
+  rotate: false
+  xy: 216, 1176
+  size: 197, 154
+  orig: 226, 167
+  offset: 10, 0
+  index: -1
+vfx_win_14
+  rotate: false
+  xy: 654, 324
+  size: 205, 155
+  orig: 226, 167
+  offset: 9, 0
+  index: -1
+vfx_win_15
+  rotate: true
+  xy: 160, 490
+  size: 205, 155
+  orig: 226, 167
+  offset: 12, 0
+  index: -1
+vfx_win_16
+  rotate: false
+  xy: 662, 159
+  size: 209, 155
+  orig: 226, 167
+  offset: 9, 0
+  index: -1
+vfx_win_17
+  rotate: false
+  xy: 438, 313
+  size: 206, 155
+  orig: 226, 167
+  offset: 12, 0
+  index: -1
+vfx_win_18
+  rotate: false
+  xy: 0, 1176
+  size: 206, 154
+  orig: 226, 167
+  offset: 12, 0
+  index: -1
+vfx_win_19
+  rotate: false
+  xy: 325, 478
+  size: 205, 155
+  orig: 226, 167
+  offset: 14, 0
+  index: -1
+vfx_win_20
+  rotate: true
+  xy: 160, 705
+  size: 200, 155
+  orig: 226, 167
+  offset: 19, 1
+  index: -1
+vfx_win_21
+  rotate: false
+  xy: 588, 1142
+  size: 185, 155
+  orig: 226, 167
+  offset: 34, 0
+  index: -1
+vfx_win_22
+  rotate: false
+  xy: 783, 1142
+  size: 184, 156
+  orig: 226, 167
+  offset: 35, 0
+  index: -1
+vfx_win_23
+  rotate: true
+  xy: 423, 1137
+  size: 193, 155
+  orig: 226, 167
+  offset: 26, 0
+  index: -1
+vfx_win_24
+  rotate: false
+  xy: 317, 968
+  size: 197, 155
+  orig: 226, 167
+  offset: 22, 0
+  index: -1
+vfx_win_25
+  rotate: false
+  xy: 536, 650
+  size: 199, 155
+  orig: 226, 167
+  offset: 20, 0
+  index: -1
+vfx_win_26
+  rotate: false
+  xy: 746, 814
+  size: 199, 154
+  orig: 226, 167
+  offset: 20, 0
+  index: -1
+vfx_win_27
+  rotate: false
+  xy: 524, 976
+  size: 200, 151
+  orig: 226, 167
+  offset: 19, 0
+  index: -1
+vfx_win_28
+  rotate: false
+  xy: 745, 650
+  size: 200, 154
+  orig: 226, 167
+  offset: 19, 0
+  index: -1
+vfx_win_29
+  rotate: false
+  xy: 540, 489
+  size: 201, 151
+  orig: 226, 167
+  offset: 18, 0
+  index: -1

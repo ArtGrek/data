@@ -1,0 +1,17 @@
+{
+  "action": {
+    "name": "bonus_init",
+    "params": {}
+  },
+  "autogame": true,
+  "command": "play",
+  "mobile": "0",
+  "portrait": false,
+  "prev_client_command_time": 304,
+  "prev_request_id": "45193bc9-2243-48df-861e-5f32bde4db21",
+  "quick_spin": 2,
+  "request_id": "3d0e9d33-2b80-420a-a170-10b82c4a4a0c",
+  "session_id": "54d657fdddea4c76800b216371ea868e",
+  "set_denominator": 1,
+  "sound": false
+}

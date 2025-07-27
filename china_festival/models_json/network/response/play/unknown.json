@@ -1,0 +1,20 @@
+{
+  "command": "play",
+  "modes": [
+    "auto",
+    "play"
+  ],
+  "request_id": "415df5f8-1c06-4e37-aa53-6f437c7fe8b8",
+  "session_id": "55ea9ad42dac4b82a528beea90e1a81d",
+  "status": {
+    "code": "GAME_REOPENED",
+    "type": "crit"
+  },
+  "user": {
+    "balance": 9850,
+    "balance_version": 82,
+    "currency": "FUN",
+    "huid": "demo-4a199296f4c94668aa7645a1f9bcf0f1",
+    "show_balance": true
+  }
+}

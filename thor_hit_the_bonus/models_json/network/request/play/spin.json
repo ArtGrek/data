@@ -1,0 +1,18 @@
+{
+  "action": {
+    "name": "spin",
+    "params": {
+      "bet_per_line": 20,
+      "lines": 1
+    }
+  },
+  "autogame": false,
+  "command": "play",
+  "mobile": false,
+  "portrait": false,
+  "prev_client_command_time": 19,
+  "quick_spin": 2,
+  "request_id": "36abc13f56974c1ba4f5957f7e8c98ea",
+  "session_id": "17520679221969UH15ouuh3xFUSvXY.EmVaz7x07pImki9byd2v",
+  "sound": false
+}

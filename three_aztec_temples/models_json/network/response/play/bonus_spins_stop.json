@@ -1,0 +1,148 @@
+{
+  "command": "play",
+  "context": {
+    "actions": [
+      "spin",
+      "buy_spin"
+    ],
+    "current": "spins",
+    "last_action": "bonus_spins_stop",
+    "last_args": {},
+    "last_win": 360,
+    "round_finished": true,
+    "spins": {
+      "bac": {
+        "1": [
+          2,
+          0
+        ],
+        "2": [
+          2,
+          1
+        ],
+        "3": [
+          2,
+          0
+        ]
+      },
+      "bac_win": false,
+      "bet_per_line": 1,
+      "board": [
+        [
+          10,
+          7,
+          7
+        ],
+        [
+          7,
+          7,
+          4
+        ],
+        [
+          5,
+          10,
+          10
+        ],
+        [
+          4,
+          12,
+          4
+        ],
+        [
+          10,
+          10,
+          1
+        ]
+      ],
+      "bs_v": [
+        [
+          10.0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          20,
+          50.0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          30.0,
+          10.0,
+          0
+        ]
+      ],
+      "bs_values": [
+        [
+          0.5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2.5
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1.5,
+          0.5,
+          0
+        ]
+      ],
+      "lines": 25,
+      "lucky_spin_win": false,
+      "round_bet": 20,
+      "round_win": 0,
+      "total_win": 360
+    },
+    "version": 1
+  },
+  "modes": [
+    "auto",
+    "play"
+  ],
+  "origin_data": {
+    "autogame": true,
+    "command": "play",
+    "feature": true,
+    "mobile": "0",
+    "portrait": false,
+    "prev_request_id": "421befc2-a0b7-4bbd-8d63-d1b957df8678",
+    "quickspin": 2,
+    "set_denominator": 1,
+    "sound": false
+  },
+  "request_id": "95ef4b69-3d98-497f-b235-e1bbc58a245f",
+  "roundnum": "2505171000004313117",
+  "session_id": "04d1923972bc43a9a629302732728d65",
+  "status": {
+    "code": "OK",
+    "type": "exceed"
+  },
+  "user": {
+    "balance": 100095,
+    "balance_version": 38,
+    "currency": "FUN",
+    "huid": "demo-106758a99a3346fba872f844aa187a8c",
+    "show_balance": true
+  }
+}

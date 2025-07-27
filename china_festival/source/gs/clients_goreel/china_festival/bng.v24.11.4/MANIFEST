@@ -1,0 +1,8 @@
+{
+    "i18n": {"bg":"China Festival","de":"China Festival","el":"China Festival","en":"China Festival","en-soc":"China Festival","es":"China Festival","fi":"China Festival","fr":"China Festival","id":"China Festival","it":"China Festival","ja":"China Festival","ko":"China Festival","nl":"China Festival","no":"China Festival","pt":"China Festival","ro":"China Festival","ru":"China Festival","sv":"China Festival","th":"เทศกาลจีน","tr":"China Festival","uk":"China Festival","vi":"China Festival","zh":"盛世庆典","zh-hant":"盛世慶典"},
+    "promo_path": "/promo/",
+    "game_id": "china_festival",
+    "pixi": "7.3.3",
+    "pixi-spine": "4.0.4",
+    "screen_resolution": "1280x720 / 16:9"
+}

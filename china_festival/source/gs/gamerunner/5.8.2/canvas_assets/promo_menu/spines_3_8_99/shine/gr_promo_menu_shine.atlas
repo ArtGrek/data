@@ -1,0 +1,20 @@
+
+gr_promo_menu_shine.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dot
+  rotate: false
+  xy: 29, 2
+  size: 210, 92
+  orig: 210, 92
+  offset: 0, 0
+  index: -1
+star
+  rotate: false
+  xy: 2, 69
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1

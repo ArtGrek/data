@@ -1,0 +1,31 @@
+{
+  "action": {
+    "name": "spin",
+    "params": {
+      "bet_factor": 20,
+      "bet_per_line": 1,
+      "lines": 1,
+      "selected_mode": "2"
+    }
+  },
+  "autogame": true,
+  "command": "login",
+  "game": "coin_lamp",
+  "huid": "demo-e55b3f9a0a5f4e42ac8114faaf0d413f",
+  "language": "en",
+  "mobile": "0",
+  "mode": "play",
+  "platform": "mob",
+  "playerguid": "4734e5ce-3391-11f0-9fad-ca43f3bffbbc",
+  "portrait": false,
+  "prev_client_command_time": 72440,
+  "prev_request_id": "3a108dbf-03ac-4575-b08f-a4e2b102e4b8",
+  "quick_spin": 2,
+  "re-enter": false,
+  "request_id": "62c3fd19-2e34-4905-8519-89e7f4236bc7",
+  "session_id": "577040c7bf0b4dc18036a41bc4527fb7",
+  "set_denominator": 1,
+  "sound": false,
+  "token": "2e3a948e-1fea-11f0-b666-76cd92dc3233",
+  "wl": "demo"
+}

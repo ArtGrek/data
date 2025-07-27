@@ -1,0 +1,159 @@
+{
+  "command": "play",
+  "context": {
+    "actions": [
+      "bonus_init"
+    ],
+    "current": "spins",
+    "last_action": "buy_spin",
+    "last_args": {
+      "bet_factor": 20,
+      "bet_per_line": 150,
+      "lines": 25,
+      "selected_mode": "1"
+    },
+    "last_win": 4500,
+    "round_finished": false,
+    "spins": {
+      "bac": {
+        "1": [
+          8,
+          1
+        ],
+        "2": [
+          7,
+          3
+        ],
+        "3": [
+          9,
+          0
+        ]
+      },
+      "bac_win": true,
+      "bet_per_line": 150,
+      "board": [
+        [
+          1,
+          9,
+          5
+        ],
+        [
+          6,
+          2,
+          1
+        ],
+        [
+          6,
+          1,
+          13
+        ],
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          5,
+          5,
+          10
+        ]
+      ],
+      "bonus_mechanic": [
+        3
+      ],
+      "bs_count": 0,
+      "is_lucky_spin": false,
+      "lines": 25,
+      "paid": true,
+      "round_bet": 3000,
+      "round_win": 0,
+      "selected_mode": "1",
+      "spin_type": 4,
+      "total_win": 0,
+      "winlines": [
+        {
+          "amount": 600,
+          "line": 8,
+          "occurrences": 4,
+          "positions": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "symbol": 4,
+          "type": "lb"
+        },
+        {
+          "amount": 600,
+          "line": 12,
+          "occurrences": 4,
+          "positions": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "symbol": 4,
+          "type": "lb"
+        }
+      ]
+    },
+    "version": 1
+  },
+  "modes": [
+    "auto",
+    "play"
+  ],
+  "origin_data": {
+    "autogame": true,
+    "command": "play",
+    "feature": true,
+    "mobile": "0",
+    "portrait": false,
+    "prev_request_id": "cba5c16b-0ff4-4af2-9c38-a1092bec7128",
+    "quickspin": 2,
+    "set_denominator": 1,
+    "sound": false
+  },
+  "request_id": "a30dde91-5145-4a04-a233-11772e89cf8f",
+  "roundnum": "2505161000003737297",
+  "session_id": "54d657fdddea4c76800b216371ea868e",
+  "status": {
+    "code": "OK",
+    "traceback": "NOT_ENOUGH_MONEY",
+    "type": "exceed",
+    "user_id": -1
+  },
+  "user": {
+    "balance": 389200,
+    "balance_version": 364,
+    "currency": "FUN",
+    "huid": "demo-88fb2ae9a9fb434c9407a6322c941377",
+    "show_balance": true
+  }
+}

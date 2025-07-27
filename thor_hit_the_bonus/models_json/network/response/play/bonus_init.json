@@ -1,0 +1,790 @@
+{
+  "command": "play",
+  "context": {
+    "achievements": {
+      "level": 1,
+      "level_percent": 0.011,
+      "number": 51,
+      "total_percent": 0.146
+    },
+    "actions": [
+      "respin"
+    ],
+    "bb": {
+      "thor_state": 1,
+      "thor_wrath_spins_left": 0,
+      "thor_wrath_symbol_pos": [
+        3,
+        0
+      ],
+      "thor_wrath_total": 5000
+    },
+    "bet20": {
+      "thor_state": 0,
+      "thor_wrath_spins_left": 0,
+      "thor_wrath_symbol_pos": [
+        2,
+        2
+      ],
+      "thor_wrath_total": 0
+    },
+    "bonus": {
+      "bac": [
+        1,
+        51
+      ],
+      "back_to": "spins",
+      "bet_per_line": 20,
+      "bg_type": 0,
+      "board": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          12,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "bs": [
+        {
+          "position": 2,
+          "reel": 1,
+          "type": "infinity",
+          "value": 1000
+        },
+        {
+          "position": 2,
+          "reel": 3,
+          "type": "infinity_wrath_sticky",
+          "value": 7000
+        },
+        {
+          "position": 2,
+          "reel": 0,
+          "type": "regular",
+          "value": 400
+        },
+        {
+          "position": 2,
+          "reel": 2,
+          "type": "regular",
+          "value": 400
+        },
+        {
+          "position": 2,
+          "reel": 4,
+          "type": "regular",
+          "value": 400
+        }
+      ],
+      "bs_count": 5,
+      "bs_v": [
+        [
+          0,
+          0,
+          400,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1000,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          400,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          7000,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          400,
+          0,
+          0
+        ]
+      ],
+      "bs_values": [
+        [
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          35,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      ],
+      "is_ultra": false,
+      "last_bs": [
+        {
+          "position": 2,
+          "reel": 0,
+          "type": "regular",
+          "value": 600
+        },
+        {
+          "position": 1,
+          "reel": 1,
+          "type": "regular",
+          "value": 800
+        },
+        {
+          "position": 3,
+          "reel": 1,
+          "type": "mystery",
+          "value": 200
+        },
+        {
+          "position": 0,
+          "reel": 2,
+          "type": "mystery_jp",
+          "value": 2000
+        },
+        {
+          "position": 2,
+          "reel": 2,
+          "type": "collector",
+          "value": 0
+        },
+        {
+          "position": 1,
+          "reel": 3,
+          "type": "regular",
+          "value": 400
+        },
+        {
+          "position": 3,
+          "reel": 3,
+          "type": "regular",
+          "value": 800
+        },
+        {
+          "position": 4,
+          "reel": 3,
+          "type": "regular",
+          "value": 200
+        },
+        {
+          "position": 1,
+          "reel": 4,
+          "type": "regular",
+          "value": 4000
+        },
+        {
+          "position": 2,
+          "reel": 4,
+          "type": "regular",
+          "value": 600
+        }
+      ],
+      "lines": 1,
+      "mps": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "mult_features": [
+        7
+      ],
+      "mult_pos": [
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "new_collectors": [
+        {
+          "position": 2,
+          "reel": 1,
+          "type": "collector",
+          "value": 2400
+        }
+      ],
+      "orig_bs_v": [
+        [
+          0,
+          0,
+          400,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1000,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          400,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          7000,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          400,
+          0,
+          0
+        ]
+      ],
+      "round_bet": 200,
+      "round_win": 0,
+      "rounds_granted": 3,
+      "rounds_left": 3,
+      "rounds_lefts": 3,
+      "selected_mode": "1",
+      "sticky_bs": [
+        {
+          "position": 2,
+          "reel": 1,
+          "type": "infinity",
+          "value": 1000
+        },
+        {
+          "position": 2,
+          "reel": 3,
+          "type": "infinity_wrath_sticky",
+          "value": 7000
+        }
+      ],
+      "total_win": 0
+    },
+    "current": "bonus",
+    "last_action": "bonus_init",
+    "last_args": {},
+    "last_win": 18000,
+    "round_finished": false,
+    "spins": {
+      "bac": [
+        1,
+        51
+      ],
+      "bet20": {
+        "bs": [
+          {
+            "position": 2,
+            "reel": 1,
+            "type": "infinity",
+            "value": 1000
+          },
+          {
+            "position": 2,
+            "reel": 3,
+            "type": "infinity_wrath_sticky",
+            "value": 7000
+          },
+          {
+            "position": 2,
+            "reel": 0,
+            "type": "regular",
+            "value": 400
+          },
+          {
+            "position": 2,
+            "reel": 2,
+            "type": "regular",
+            "value": 400
+          },
+          {
+            "position": 2,
+            "reel": 4,
+            "type": "regular",
+            "value": 400
+          }
+        ]
+      },
+      "bet_per_line": 20,
+      "bg_type": 0,
+      "board": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          12,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "bs": [
+        {
+          "position": 2,
+          "reel": 1,
+          "type": "infinity",
+          "value": 1000
+        },
+        {
+          "position": 2,
+          "reel": 3,
+          "type": "infinity_wrath_sticky",
+          "value": 7000
+        },
+        {
+          "position": 2,
+          "reel": 0,
+          "type": "regular",
+          "value": 400
+        },
+        {
+          "position": 2,
+          "reel": 2,
+          "type": "regular",
+          "value": 400
+        },
+        {
+          "position": 2,
+          "reel": 4,
+          "type": "regular",
+          "value": 400
+        }
+      ],
+      "bs_count": 5,
+      "bs_new": [
+        {
+          "position": 2,
+          "reel": 0,
+          "type": "regular",
+          "value": 400
+        },
+        {
+          "position": 2,
+          "reel": 2,
+          "type": "regular",
+          "value": 400
+        },
+        {
+          "position": 2,
+          "reel": 4,
+          "type": "regular",
+          "value": 400
+        }
+      ],
+      "bs_new_count": 3,
+      "bs_sticky_bet": 200,
+      "bs_v": [
+        [
+          0,
+          0,
+          400,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1000,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          400,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          7000,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          400,
+          0,
+          0
+        ]
+      ],
+      "bs_values": [
+        [
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          35,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      ],
+      "drawer": {
+        "thor_wrath_spins_left": 0
+      },
+      "freezing_bs": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "is_bought": false,
+      "is_extra": false,
+      "last_bet": 20,
+      "lines": 1,
+      "new_collectors": [
+        {
+          "position": 2,
+          "reel": 1,
+          "type": "collector",
+          "value": 2400
+        }
+      ],
+      "round_bet": 200,
+      "round_win": 0,
+      "sticky_bs": [
+        {
+          "position": 2,
+          "reel": 1,
+          "type": "infinity",
+          "value": 1000
+        },
+        {
+          "position": 2,
+          "reel": 3,
+          "type": "infinity_wrath_sticky",
+          "value": 7000
+        }
+      ],
+      "sticky_bs_pos": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "temp_board": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          7,
+          0
+        ],
+        [
+          8,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          3,
+          1,
+          0,
+          0
+        ]
+      ],
+      "temp_bs_v": [
+        [
+          0,
+          0,
+          600,
+          0,
+          0
+        ],
+        [
+          0,
+          800,
+          0,
+          200,
+          0
+        ],
+        [
+          2000,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          400,
+          0,
+          800,
+          200
+        ],
+        [
+          0,
+          "minor",
+          600,
+          0,
+          0
+        ]
+      ],
+      "temp_bs_values": [
+        [
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          0,
+          1,
+          0
+        ],
+        [
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          4,
+          1
+        ],
+        [
+          0,
+          20,
+          3,
+          0,
+          0
+        ]
+      ]
+    },
+    "version": 1
+  },
+  "modes": [
+    "auto",
+    "play"
+  ],
+  "origin_data": {
+    "autogame": false,
+    "data": {
+      "quick_spin": false
+    },
+    "feature": true,
+    "mobile": false,
+    "portrait": false,
+    "quick_spin": false,
+    "quickspin": 2,
+    "sound": false
+  },
+  "request_id": "f6644437903b4047a0835b7d1463e452",
+  "session_id": "17520679221969UH15ouuh3xFUSvXY.EmVaz7x07pImki9byd2v",
+  "status": {
+    "code": "OK"
+  },
+  "user": {
+    "balance": 487000,
+    "balance_version": 1752068008560,
+    "currency": "FUN",
+    "huid": "686e6f522c7c80483b132b54",
+    "nick": "Player 3a9b80b6-e351-4713-9627-3ad37a961139",
+    "show_balance": true
+  }
+}

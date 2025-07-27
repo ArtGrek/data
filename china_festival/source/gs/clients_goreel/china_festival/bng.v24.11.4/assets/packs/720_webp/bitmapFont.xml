@@ -1,0 +1,23 @@
+<font>
+  <info face="bitmapfont" size="148"/>
+  <common lineHeight="148" scaleW="512" scaleH="512" pages="1"/>
+  <pages>
+    <page id="0" file="bitmapFont.webp"/>
+  </pages>
+  <chars count="13">
+    <char id="44" x="432" y="0" width="34" height="148" xoffset="0" yoffset="0" xadvance="34"/>
+    <char id="46" x="476" y="0" width="34" height="148" xoffset="0" yoffset="0" xadvance="34"/>
+    <char id="48" x="0" y="0" width="98" height="148" xoffset="0" yoffset="0" xadvance="98"/>
+    <char id="49" x="0" y="158" width="98" height="148" xoffset="0" yoffset="0" xadvance="98"/>
+    <char id="50" x="0" y="316" width="98" height="148" xoffset="0" yoffset="0" xadvance="98"/>
+    <char id="51" x="108" y="0" width="98" height="148" xoffset="0" yoffset="0" xadvance="98"/>
+    <char id="52" x="216" y="0" width="98" height="148" xoffset="0" yoffset="0" xadvance="98"/>
+    <char id="53" x="324" y="0" width="98" height="148" xoffset="0" yoffset="0" xadvance="98"/>
+    <char id="54" x="108" y="158" width="98" height="148" xoffset="0" yoffset="0" xadvance="98"/>
+    <char id="55" x="108" y="316" width="98" height="148" xoffset="0" yoffset="0" xadvance="98"/>
+    <char id="56" x="216" y="158" width="98" height="148" xoffset="0" yoffset="0" xadvance="98"/>
+    <char id="57" x="216" y="316" width="98" height="148" xoffset="0" yoffset="0" xadvance="98"/>
+    <char id="120" x="324" y="158" width="98" height="148" xoffset="0" yoffset="0" xadvance="98"/>
+  </chars>
+  <kernings count="0"/>
+</font>

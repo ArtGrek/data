@@ -1,0 +1,31 @@
+{
+  "action": {
+    "name": "spin",
+    "params": {
+      "bet_factor": 20,
+      "bet_per_line": 150,
+      "lines": 25,
+      "selected_mode": "2"
+    }
+  },
+  "autogame": true,
+  "command": "login",
+  "game": "china_festival",
+  "huid": "demo-88fb2ae9a9fb434c9407a6322c941377",
+  "language": "en",
+  "mobile": "0",
+  "mode": "play",
+  "platform": "mob",
+  "playerguid": "d2975c62-3244-11f0-9fad-ca43f3bffbbc",
+  "portrait": false,
+  "prev_client_command_time": 303,
+  "prev_request_id": "f466e2ec-87c3-4397-8255-b16191d4d88e",
+  "quick_spin": 2,
+  "re-enter": false,
+  "request_id": "7df5da8e-afbd-4969-9c85-d67386ade182",
+  "session_id": "54d657fdddea4c76800b216371ea868e",
+  "set_denominator": 1,
+  "sound": false,
+  "token": "e5e1a898-19d2-11f0-87d1-1e2ba00d4d9a",
+  "wl": "demo"
+}

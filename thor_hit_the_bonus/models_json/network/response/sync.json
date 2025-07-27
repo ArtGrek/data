@@ -1,0 +1,20 @@
+{
+  "command": "sync",
+  "modes": [
+    "auto",
+    "play"
+  ],
+  "request_id": "92cb36c58d1640eca71d6025d16dc37b",
+  "session_id": "17520679221969UH15ouuh3xFUSvXY.EmVaz7x07pImki9byd2v",
+  "status": {
+    "code": "OK"
+  },
+  "user": {
+    "balance": 507200,
+    "balance_version": 1752068250132,
+    "currency": "FUN",
+    "huid": "686e6f522c7c80483b132b54",
+    "nick": "Player 3a9b80b6-e351-4713-9627-3ad37a961139",
+    "show_balance": true
+  }
+}

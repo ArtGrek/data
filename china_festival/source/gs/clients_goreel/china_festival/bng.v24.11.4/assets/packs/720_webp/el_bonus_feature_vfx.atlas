@@ -1,0 +1,62 @@
+
+el_bonus_feature_vfx.webp
+size: 760,738
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+circle_green
+  rotate: false
+  xy: 0, 0
+  size: 385, 385
+  orig: 426, 405
+  offset: 30, 3
+  index: -1
+circle_purple
+  rotate: true
+  xy: 395, 0
+  size: 364, 365
+  orig: 426, 405
+  offset: 41, 13
+  index: -1
+circle_red
+  rotate: true
+  xy: 395, 374
+  size: 364, 365
+  orig: 426, 405
+  offset: 40, 13
+  index: -1
+green_glow
+  rotate: false
+  xy: 74, 665
+  size: 58, 58
+  orig: 64, 64
+  offset: 3, 3
+  index: -1
+particle_2
+  rotate: false
+  xy: 210, 665
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+particles2_00
+  rotate: true
+  xy: 0, 395
+  size: 260, 251
+  orig: 270, 270
+  offset: 5, 10
+  index: -1
+purple_glow
+  rotate: false
+  xy: 0, 665
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+red_glow
+  rotate: false
+  xy: 142, 665
+  size: 58, 58
+  orig: 64, 64
+  offset: 3, 3
+  index: -1

@@ -1,0 +1,22 @@
+{
+  "action": {
+    "name": "buy_spin",
+    "params": {
+      "bet_factor": 20,
+      "bet_per_line": 1,
+      "lines": 25,
+      "selected_mode": "1"
+    }
+  },
+  "autogame": true,
+  "command": "play",
+  "mobile": "0",
+  "portrait": false,
+  "prev_client_command_time": 282,
+  "prev_request_id": "52f719fc-f5b1-462d-9916-436a954394b8",
+  "quick_spin": 2,
+  "request_id": "b99dc040-5942-4f54-a639-3421242af4ac",
+  "session_id": "04d1923972bc43a9a629302732728d65",
+  "set_denominator": 1,
+  "sound": false
+}

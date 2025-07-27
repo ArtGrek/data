@@ -1,0 +1,83 @@
+
+el_bonus.webp
+size: 200,1712
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+border_vfx
+  rotate: false
+  xy: 0, 0
+  size: 200, 240
+  orig: 200, 240
+  offset: 0, 0
+  index: -1
+el_bonus
+  rotate: true
+  xy: 0, 1401
+  size: 162, 171
+  orig: 200, 240
+  offset: 19, 33
+  index: -1
+glow_back_rect
+  rotate: false
+  xy: 0, 1573
+  size: 148, 139
+  orig: 164, 164
+  offset: 6, 16
+  index: -1
+gold_uni
+  rotate: false
+  xy: 0, 250
+  size: 200, 240
+  orig: 200, 240
+  offset: 0, 0
+  index: -1
+placeholder_summ
+  rotate: true
+  xy: 158, 1573
+  size: 90, 30
+  orig: 90, 30
+  offset: 0, 0
+  index: -1
+rect_burst
+  rotate: false
+  xy: 0, 749
+  size: 200, 236
+  orig: 200, 240
+  offset: 0, 1
+  index: -1
+sweep1
+  rotate: true
+  xy: 184, 995
+  size: 59, 14
+  orig: 60, 14
+  offset: 0, 0
+  index: -1
+symbols_center
+  rotate: true
+  xy: 0, 1355
+  size: 36, 172
+  orig: 36, 176
+  offset: 0, 2
+  index: -1
+symbols_side
+  rotate: true
+  xy: 0, 995
+  size: 170, 174
+  orig: 200, 240
+  offset: 15, 33
+  index: -1
+symbols_side3
+  rotate: true
+  xy: 0, 1175
+  size: 170, 174
+  orig: 200, 240
+  offset: 15, 33
+  index: -1
+vfx_cover
+  rotate: false
+  xy: 0, 500
+  size: 200, 239
+  orig: 200, 240
+  offset: 0, 0
+  index: -1

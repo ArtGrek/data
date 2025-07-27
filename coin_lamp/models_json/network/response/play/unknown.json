@@ -1,0 +1,20 @@
+{
+  "command": "play",
+  "modes": [
+    "auto",
+    "play"
+  ],
+  "request_id": "852a733c-fe92-4958-babd-2b80f9481ec4",
+  "session_id": "577040c7bf0b4dc18036a41bc4527fb7",
+  "status": {
+    "code": "PLAYER_DISCONNECTED",
+    "type": "crit"
+  },
+  "user": {
+    "balance": 85800,
+    "balance_version": 2665,
+    "currency": "FUN",
+    "huid": "demo-e55b3f9a0a5f4e42ac8114faaf0d413f",
+    "show_balance": true
+  }
+}

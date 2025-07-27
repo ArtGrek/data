@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=8"/>
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+</head>
+<body>
+<script>
+    (function(window, app_config, app_config_url) {
+        function replaceDomainInConfig(config, domain) {
+            if (!domain) return;
+            if (config.desktop.use_cdn)
+                config.desktop.client_url = replaceDomainInURL(config.desktop.client_url, domain);
+            if (config.mobile.use_cdn)
+                config.mobile.client_url = replaceDomainInURL(config.mobile.client_url, domain);
+            if (config.gr.use_cdn)
+                config.gr.static_path = replaceDomainInURL(config.gr.static_path, domain);
+                if (config.available_games.length != null) {
+                    for (var i in config.available_games) {
+                        config.available_games[i].client_url = replaceDomainInURL(config.available_games[i].client_url, domain);
+                    }
+                }
+        }
+
+        function usesCDN(config) {
+            return config.desktop.use_cdn || config.mobile.use_cdn || config.gr.use_cdn;
+        }
+
+        function getStartScript(config) {
+            return config.gr.static_path + 'index.js?_ts=' + config.gr.revision;
+        }
+
+        var appStarted = false;
+
+        function xhr(url, options) {
+            options = options || {};
+            var xhr = new window.XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        options.success && options.success(xhr.responseText, xhr);
+                    } else {
+                        options.error && options.error(xhr);
+                    }
+                }
+            };
+            xhr.open(options.method || 'GET', url, true);
+            xhr.send(options.data || '');
+        }
+
+        function replaceDomainInURL(url, domain) {
+            if (!url) return url;
+            if (domain[domain.length - 1] !== '/') {
+                domain += '/';
+            }
+            return url.replace(/^([^/]*\/\/[^/]*)?\/?/, domain);
+        }
+
+        function findBestCDN(config, callback) {
+            var checkImageFile = config.static_domains.metric_url,
+                staticDomainsLogUrl = config.static_domains.log_url,
+                staticDomainsUrl = config.static_domains.domains_url,
+                staticDomainsTimeout = config.static_domains.timeout,
+                firstDetected = false;
+
+            function logMessage(type, msg, data, number) {
+                if (!staticDomainsLogUrl) return;
+                xhr(staticDomainsLogUrl, {
+                    method: 'POST',
+                    data: JSON.stringify([{
+                        type: type,
+                        msg: msg,
+                        data: data,
+                        time: Number(new Date()),
+                        number: number
+                    }])
+                });
+            }
+
+            function startMetrics(staticDomains) {
+                if (!staticDomains.length) return callback();
+                setTimeout(callback, staticDomainsTimeout);
+                var i = 0;
+                while (staticDomains[i]) {
+                    velocityDetect(staticDomains[i]);
+                    i++;
+                }
+            }
+
+            function velocityDetect(domainAddress) {
+                var startTime = (new Date()).getTime();
+                xhr(domainAddress + checkImageFile, {
+                    method: 'HEAD',
+                    success: function() {
+                        var duration = (new Date()).getTime() - startTime;
+                        checkInDetection(domainAddress, duration);
+                    },
+                    error: function() {
+                        logMessage('error', 'CDN_METER_ERROR', domainAddress);
+                    }
+                });
+            }
+
+            function checkInDetection(domainAddress, duration) {
+                if (!firstDetected) {
+                    firstDetected = true;
+                    callback(domainAddress);
+                    logMessage('info', 'CDN_METER_FIRST', domainAddress, duration);
+                } else {
+                    logMessage('info', 'CDN_METER', domainAddress, duration);
+                }
+            }
+
+            xhr(staticDomainsUrl, {
+                success: function(resp) {
+                    var staticDomains = JSON.parse(resp).domains || [];
+                    startMetrics(staticDomains);
+                }
+            });
+        }
+
+        function startApp(config, domain) {
+            if (appStarted) return;
+            appStarted = true;
+
+            replaceDomainInConfig(config, domain);
+
+            window._PROVIDER = config;
+
+            var startScript = getStartScript(config);
+
+            var v = window.document.createElement('script');
+            v.setAttribute('type', 'text/javascript');
+            v.setAttribute('src', startScript);
+            window.document.getElementsByTagName('head')[0].appendChild(v);
+        }
+
+        function runWithConfig(config) {
+            if (!config) return
+
+            var useCDN = usesCDN(config),
+                forceStaticDomain = config.static_domains.force_domain;
+            if (!useCDN) {
+                startApp(config);
+            } else if (forceStaticDomain) {
+                startApp(config, '//' + forceStaticDomain);
+            } else {
+                findBestCDN(config, function(domain) {
+                    startApp(config, domain);
+                });
+            }
+        }
+
+        if (app_config) {
+            runWithConfig(app_config);
+        } else if (app_config_url) {
+            xhr(app_config_url + window.location.search, {
+                success: function(resp) {
+                    runWithConfig(JSON.parse(resp));
+                },
+                error: function(xhr) {
+                    if (xhr.responseText) document.write(xhr.responseText);
+                }
+            });
+        }
+    })(window, {"available_games": [{"client_url": "http://localhost:8080/gs/clients_goreel/book_of_sun/bng.v24.8.9/", "name": "book_of_sun", "title": "Book of Sun"}, {"client_url": "http://localhost:8080/gs/clients_goreel/scarab_boost/bng.v24.9.5/", "name": "scarab_boost", "title": "Scarab Boost"}, {"client_url": "http://localhost:8080/gs/clients_goreel/book_of_sun_choice/bng.v24.8.9/", "name": "book_of_sun_choice", "title": "Book of Sun: Choice"}, {"client_url": "http://localhost:8080/gs/clients_kendoo/coin_lightning/bng.v24.9.9/", "name": "coin_lightning", "title": "Coin UP : Lightning"}, {"client_url": "http://localhost:8080/gs/clients_goreel/queen_of_the_sun/bng.v24.9.5/", "name": "queen_of_the_sun", "title": "Queen of the Sun"}, {"client_url": "http://localhost:8080/gs/clients_goreel/thunder_of_olympus/bng.v24.9.5/", "name": "thunder_of_olympus", "title": "Thunder of Olympus"}, {"client_url": "http://localhost:8080/gs/clients_goreel/3_coins/bng.v24.11.5/", "name": "3_coins", "title": "3 Coins"}, {"client_url": "http://localhost:8080/gs/clients_kendoo/coin_up/bng.v24.9.9/", "name": "coin_up", "title": "Coin UP : Hot Fire"}, {"client_url": "http://localhost:8080/gs/clients_ratpack/777_fruity_classic/bng.v24.10.10/", "name": "777_fruity_classic", "title": "777 Fruity Classic"}, {"client_url": "http://localhost:8080/gs/clients_goreel/lady_fortune/bng.v24.10.12/", "name": "lady_fortune", "title": "Lady Fortune"}, {"client_url": "http://localhost:8080/gs/clients_goreel/gold_express/bng.v24.9.2/", "name": "gold_express", "title": "Gold Express"}, {"client_url": "http://localhost:8080/gs/clients_goreel/hawaii_riches/bng.v24.11.7/", "name": "hawaii_riches", "title": "Hawaii Riches"}, {"client_url": "http://localhost:8080/gs/clients_goreel/maya_sun/bng.v24.9.2/", "name": "maya_sun", "title": "Maya Sun"}, {"client_url": "http://localhost:8080/gs/clients_goreel/china_festival/bng.v24.11.4/", "name": "china_festival", "title": "China Festival"}, {"client_url": "http://localhost:8080/gs/clients_kendoo/coin_volcano/bng.v24.9.9/", "name": "coin_volcano", "title": "Coin Volcano"}, {"client_url": "http://localhost:8080/gs/clients_goreel/dragon_wealth/bng.v24.9.2/", "name": "dragon_wealth", "title": "Dragon Wealth"}, {"client_url": "http://localhost:8080/gs/clients_ratpack/sky_pearls/bng.v24.11.7/", "name": "sky_pearls", "title": "Sky Pearls"}, {"client_url": "http://localhost:8080/gs/clients_goreel/aztec_sun/bng.v24.11.6/", "name": "aztec_sun", "title": "Aztec Sun"}, {"client_url": "http://localhost:8080/gs/clients_kendoo/super_sticky_piggy/bng.v24.9.9/", "name": "super_sticky_piggy", "title": "Super Sticky Piggy"}, {"client_url": "http://localhost:8080/gs/clients_ratpack/fortune_globe/bng.v24.11.7/", "name": "fortune_globe", "title": "Fortune Globe"}, {"client_url": "http://localhost:8080/gs/clients_ratpack/african_spirit_sticky_wilds/bng.v24.10.10/", "name": "african_spirit_sticky_wilds", "title": "African Spirit Sticky Wilds"}, {"client_url": "http://localhost:8080/gs/clients_goreel/tigers_gold/bng.v24.9.8/", "name": "tigers_gold", "title": "Tiger\u2019s Gold"}, {"client_url": "http://localhost:8080/gs/clients_hraymo/olaf_viking/bng.v24.4.6/", "name": "olaf_viking", "title": "Olaf Viking"}, {"client_url": "http://localhost:8080/gs/clients_goreel/hit_more_gold/bng.v24.11.6/", "name": "hit_more_gold", "title": "Hit more Gold"}, {"client_url": "http://localhost:8080/gs/clients_goreel/grab_more_gold/bng.v24.11.6/", "name": "grab_more_gold", "title": "Grab more Gold!"}, {"client_url": "http://localhost:8080/gs/clients_goreel/big_heist/bng.v24.10.6/", "name": "big_heist", "title": "Big Heist"}, {"client_url": "http://localhost:8080/gs/clients_kendoo/pearl_diver_2/bng.v24.11.5/", "name": "pearl_diver_2", "title": "Pearl Diver 2: Treasure Chest"}, {"client_url": "http://localhost:8080/gs/clients_goreel/green_chilli/bng.v24.11.5/", "name": "green_chilli", "title": "Green Chilli"}, {"client_url": "http://localhost:8080/gs/clients_goreel/super_hot_chilli/bng.v24.11.6/", "name": "super_hot_chilli", "title": "Super Hot Chilli"}, {"client_url": "http://localhost:8080/gs/clients_goreel/magic_ball/bng.v24.9.8/", "name": "magic_ball", "title": "Magic Ball"}, {"client_url": "http://localhost:8080/gs/clients_kendoo/black_wolf_2/bng.v24.11.10/", "name": "black_wolf_2", "title": "Black Wolf 2"}, {"client_url": "http://localhost:8080/gs/clients_goreel/hot_fire_fruits/bng.v24.10.11/", "name": "hot_fire_fruits", "title": "Hot Fire Fruits"}, {"client_url": "http://localhost:8080/gs/clients_goreel/great_panda/bng.v24.9.6/", "name": "great_panda", "title": "Great Panda"}, {"client_url": "http://localhost:8080/gs/clients_goreel/scarab_riches/bng.v24.9.5/", "name": "scarab_riches", "title": "Scarab Riches"}, {"client_url": "http://localhost:8080/gs/clients_kendoo/aztec_fire/bng.v24.11.10/", "name": "aztec_fire", "title": "Aztec Fire"}, {"client_url": "http://localhost:8080/gs/clients_kendoo/pearl_diver/bng.v24.10.10/", "name": "pearl_diver", "title": "Pearl Diver"}, {"client_url": "http://localhost:8080/gs/clients_goreel/sky_coins/bng.v24.10.6/", "name": "sky_coins", "title": "Sky Coins"}, {"client_url": "http://localhost:8080/gs/clients_hraymo/golden_teapot/bng.v24.11.9/", "name": "golden_teapot", "title": "Golden Teapot"}, {"client_url": "http://localhost:8080/gs/clients_goreel/yo_ho_gold/bng.v24.9.8/", "name": "yo_ho_gold", "title": "Yo-Ho Gold!"}, {"client_url": "http://localhost:8080/gs/clients_goreel/super_marble/bng.v24.9.5/", "name": "super_marble", "title": "Super Marble"}, {"client_url": "http://localhost:8080/gs/clients_kendoo/book_of_wizard/bng.v24.10.10/", "name": "book_of_wizard", "title": "Book Of Wizard"}, {"client_url": "http://localhost:8080/gs/clients_goreel/dragon_pearls/bng.v24.9.5/", "name": "dragon_pearls", "title": "Dragon Pearls"}, {"client_url": "http://localhost:8080/gs/clients_goreel/sun_of_egypt_3/bng.v24.11.5/", "name": "sun_of_egypt_3", "title": "Sun of Egypt 3"}, {"client_url": "http://localhost:8080/gs/clients_goreel/tiger_jungle/bng.v24.11.6/", "name": "tiger_jungle", "title": "Tiger Jungle"}, {"client_url": "http://localhost:8080/gs/clients_kendoo/book_of_wizard_crystal/bng.v24.11.5/", "name": "book_of_wizard_crystal", "title": "Book of Wizard: Crystal Chance"}, {"client_url": "http://localhost:8080/gs/clients_goreel/caishen_wealth/bng.v24.9.8/", "name": "caishen_wealth", "title": "Caishen Wealth"}, {"client_url": "http://localhost:8080/gs/clients_goreel/magic_apple/bng.v24.11.5/", "name": "magic_apple", "title": "Magic Apple"}, {"client_url": "http://localhost:8080/gs/clients_kendoo/sticky_piggy/bng.v24.10.10/", "name": "sticky_piggy", "title": "Sticky Piggy"}, {"client_url": "http://localhost:8080/gs/clients_goreel/grab_the_gold/bng.v24.9.1/", "name": "grab_the_gold", "title": "Grab the Gold!"}, {"client_url": "http://localhost:8080/gs/clients_ratpack/lava_coins/bng.v24.11.4/", "name": "lava_coins", "title": "Lava Coins"}, {"client_url": "http://localhost:8080/gs/clients_goreel/3_pots_of_egypt/bng.v24.11.5/", "name": "3_pots_of_egypt", "title": "3 Pots of Egypt"}, {"client_url": "http://localhost:8080/gs/clients_goreel/sun_of_egypt_4/bng.v24.11.5/", "name": "sun_of_egypt_4", "title": "Sun of Egypt 4"}, {"client_url": "http://localhost:8080/gs/clients_goreel/goddess_of_egypt/bng.v24.9.8/", "name": "goddess_of_egypt", "title": "Goddess of Egypt"}, {"client_url": "http://localhost:8080/gs/clients_goreel/3_china_pots/bng.v24.11.5/", "name": "3_china_pots", "title": "3 China Pots"}, {"client_url": "http://localhost:8080/gs/clients_kendoo/fishing_bear/bng.v24.9.9/", "name": "fishing_bear", "title": "Fishin\u2019 Bear"}, {"client_url": "http://localhost:8080/gs/clients_goreel/eggs_of_gold/bng.v24.9.6/", "name": "eggs_of_gold", "title": "Eggs of Gold"}, {"client_url": "http://localhost:8080/gs/clients_kendoo/rio_gems/bng.v24.11.10/", "name": "rio_gems", "title": "Rio Gems"}, {"client_url": "http://localhost:8080/gs/clients_goreel/more_magic_apple/bng.v24.11.5/", "name": "more_magic_apple", "title": "More Magic Apple"}, {"client_url": "http://localhost:8080/gs/clients_goreel/777_coins/bng.v24.11.5/", "name": "777_coins", "title": "777 Coins"}, {"client_url": "http://localhost:8080/gs/clients_kendoo/black_wolf/bng.v24.9.9/", "name": "black_wolf", "title": "Black Wolf"}, {"client_url": "http://localhost:8080/gs/clients_ratpack/3_clover_pots/bng.v24.11.7/", "name": "3_clover_pots", "title": "3 Clover Pots"}, {"client_url": "http://localhost:8080/gs/clients_kendoo/aztec_fire_2/bng.v24.11.10/", "name": "aztec_fire_2", "title": "Aztec Fire 2"}, {"client_url": "http://localhost:8080/gs/clients_goreel/happy_fish/bng.v24.4.2/", "name": "happy_fish", "title": "Happy Fish"}, {"client_url": "http://localhost:8080/gs/clients_goreel/green_chilli_2/bng.v24.11.5/", "name": "green_chilli_2", "title": "Green Chilli 2"}, {"client_url": "http://localhost:8080/gs/clients_goreel/crystal_scarabs/bng.v24.11.7/", "name": "crystal_scarabs", "title": "Crystal Scarabs"}, {"client_url": "http://localhost:8080/gs/clients_goreel/eye_of_gold/bng.v24.9.8/", "name": "eye_of_gold", "title": "Eye of Gold"}, {"client_url": "http://localhost:8080/gs/clients_kendoo/tiger_gems/bng.v24.11.10/", "name": "tiger_gems", "title": "Tiger Gems"}, {"client_url": "http://localhost:8080/gs/clients_kendoo/boom_gold/bng.v24.9.9/", "name": "boom_gold", "title": "Boom! Boom! Gold!"}, {"client_url": "http://localhost:8080/gs/clients_goreel/forest_spirit/bng.v24.10.6/", "name": "forest_spirit", "title": "Forest Spirit"}, {"client_url": "http://localhost:8080/gs/clients_goreel/lamp_of_wonder/bng.v24.10.9/", "name": "lamp_of_wonder", "title": "Lamp of Wonder"}, {"client_url": "http://localhost:8080/gs/clients_goreel/moon_sisters/bng.v24.9.5/", "name": "moon_sisters", "title": "Moon Sisters"}, {"client_url": "http://localhost:8080/gs/clients_goreel/sun_of_egypt/bng.v24.11.5/", "name": "sun_of_egypt", "title": "Sun of Egypt"}, {"client_url": "http://localhost:8080/gs/clients_kendoo/egypt_fire/bng.v24.11.10/", "name": "egypt_fire", "title": "Egypt Fire"}, {"client_url": "http://localhost:8080/gs/clients_goreel/sun_of_egypt_2/bng.v24.11.5/", "name": "sun_of_egypt_2", "title": "Sun of Egypt 2"}, {"client_url": "http://localhost:8080/gs/clients_goreel/candy_boom/bng.v24.9.6/", "name": "candy_boom", "title": "Candy Boom"}, {"client_url": "http://localhost:8080/gs/clients_goreel/buddha_fortune/bng.v24.11.1/", "name": "buddha_fortune", "title": "Buddha Fortune"}, {"client_url": "http://localhost:8080/gs/clients_hraymo/storm_of_olympus/bng.v24.11.9/", "name": "storm_of_olympus", "title": "Storm Of Olympus"}, {"client_url": "http://localhost:8080/gs/clients_kendoo/wolf_saga/bng.v24.10.10/", "name": "wolf_saga", "title": "Wolf Saga"}, {"client_url": "http://localhost:8080/gs/clients_kendoo/3_hot_chillies/bng.v24.9.9/", "name": "3_hot_chillies", "title": "3 Hot Chillies"}, {"client_url": "http://localhost:8080/gs/clients_goreel/scarab_temple/bng.v24.11.6/", "name": "scarab_temple", "title": "Scarab Temple"}, {"client_url": "http://localhost:8080/gs/clients_goreel/golden_dancing_lion/bng.v24.4.2/", "name": "golden_dancing_lion", "title": "Golden Dancing Lion"}, {"client_url": "http://localhost:8080/gs/clients_goreel/gold_nuggets/bng.v24.9.2/", "name": "gold_nuggets", "title": "Gold Nuggets"}, {"client_url": "http://localhost:8080/gs/clients_goreel/777_gems_respin/bng.v24.8.9/", "name": "777_gems_respin", "title": "777 Gems Respin"}, {"client_url": "http://localhost:8080/gs/clients_hraymo/amazonia_spirit/bng.v24.9.2/", "name": "amazonia_spirit", "title": "Amazonia Spirit"}, {"client_url": "http://localhost:8080/gs/clients_goreel/lion_coins/bng.v24.9.2/", "name": "lion_coins", "title": "Lion Coins"}, {"client_url": "http://localhost:8080/gs/clients_goreel/book_of_sun_multichance/bng.v24.8.9/", "name": "book_of_sun_multichance", "title": "Book of Sun: Multichance"}, {"client_url": "http://localhost:8080/gs/clients_goreel/lord_fortune_2/bng.v24.9.6/", "name": "lord_fortune_2", "title": "Lord Fortune 2"}, {"client_url": "http://localhost:8080/gs/clients_goreel/hit_the_gold/bng.v24.11.6/", "name": "hit_the_gold", "title": "Hit the Gold"}, {"client_url": "http://localhost:8080/gs/clients_goreel/little_farm/bng.v24.10.6/", "name": "little_farm", "title": "Little Farm"}, {"client_url": "http://localhost:8080/gs/clients_goreel/lotus_charm/bng.v24.10.4/", "name": "lotus_charm", "title": "Lotus Charm"}, {"client_url": "http://localhost:8080/gs/clients_goreel/lucky_penny/bng.v24.11.5/", "name": "lucky_penny", "title": "Lucky Penny"}, {"client_url": "http://localhost:8080/gs/clients_goreel/magic_apple_2/bng.v24.11.5/", "name": "magic_apple_2", "title": "Magic Apple 2"}, {"client_url": "http://localhost:8080/gs/clients_goreel/olympian_gods/bng.v24.9.5/", "name": "olympian_gods", "title": "Olympian Gods"}, {"client_url": "http://localhost:8080/gs/clients_kendoo/3_coin_volcanoes/bng.v24.10.10/", "name": "3_coin_volcanoes", "title": "3 Coin Volcanoes"}, {"client_url": "http://localhost:8080/gs/clients_goreel/15_dragon_pearls/bng.v24.11.6/", "name": "15_dragon_pearls", "title": "15 Dragon Pearls"}, {"client_url": "http://localhost:8080/gs/clients_goreel/sunlight_princess/bng.v24.9.2/", "name": "sunlight_princess", "title": "Sunlight Princess"}, {"client_url": "http://localhost:8080/gs/clients_goreel/super_rich_god/bng.v24.9.5/", "name": "super_rich_god", "title": "Super Rich God"}, {"client_url": "http://localhost:8080/gs/clients_goreel/3_coins_egypt/bng.v24.10.10/", "name": "3_coins_egypt", "title": "3 Coins: Egypt"}, {"client_url": "http://localhost:8080/gs/clients_goreel/tiger_stone/bng.v24.9.1/", "name": "tiger_stone", "title": "Tiger Stone"}, {"client_url": "http://localhost:8080/gs/clients_goreel/3_egypt_chests/bng.v24.11.5/", "name": "3_egypt_chests", "title": "3 Egypt Chests"}, {"client_url": "http://localhost:8080/gs/clients_goreel/wukong/bng.v24.9.8/", "name": "wukong", "title": "Wukong"}, {"client_url": "http://localhost:8080/gs/clients_goreel/wolf_night/bng.v24.11.6/", "name": "wolf_night", "title": "Wolf Night"}, {"client_url": "http://localhost:8080/gs/clients_hraymo/3_african_drums/bng.v24.11.10/", "name": "3_african_drums", "title": "3 African Drums"}], "desktop": {"client_url": "http://localhost:8080/gs/clients_goreel/china_festival/bng.v24.11.4/", "log_url": "//localhost:8080/bng-site-eu/log/china_festival/desktop/QUEUE/demo/", "revision": "b4ced587", "server_url": "//localhost:8080/bng-site-eu/gs/china_festival/desktop/QUEUE/demo/", "use_cdn": true}, "gr": {"revision": "3d1a4a1a", "static_path": "http://localhost:8080/gs/gamerunner/5.8.2/", "use_cdn": true}, "log_url": "//localhost:8080/bng-site-eu/log/", "mobile": {"client_url": "http://localhost:8080/gs/clients_goreel/china_festival/bng.v24.11.4/", "log_url": "//localhost:8080/bng-site-eu/log/china_festival/mobile/QUEUE/demo/", "revision": "b4ced587", "server_url": "//localhost:8080/bng-site-eu/gs/china_festival/mobile/QUEUE/demo/", "use_cdn": true}, "options": {"allow_autoplay": "1", "allow_gamble": "1", "allow_shop": "1", "autoplay_menu_rounds": [5, 10, 25, 50, 75, 100], "cashier_url": "", "cashier_url_blank": "0", "cta_url": "", "disable_autogame_in_bonus_game": "0", "disable_buy_bonus": "0", "disable_gold_bet": "0", "disable_reel_skipping": "0", "disable_spin_on_play": "0", "exit_url": "/games", "game_name": "china_festival", "glory_to_ukraine": "0", "history_url": "", "hyper_url": "http://localhost:8080/process/", "i18n": {"bg": "China Festival", "de": "China Festival", "el": "China Festival", "en": "China Festival", "en-soc": "China Festival", "es": "China Festival", "fi": "China Festival", "fr": "China Festival", "id": "China Festival", "it": "China Festival", "ja": "China Festival", "ko": "China Festival", "nl": "China Festival", "no": "China Festival", "pt": "China Festival", "ro": "China Festival", "ru": "China Festival", "sv": "China Festival", "th": "\u0e40\u0e17\u0e28\u0e01\u0e32\u0e25\u0e08\u0e35\u0e19", "tr": "China Festival", "uk": "China Festival", "vi": "China Festival", "zh": "\u76db\u4e16\u5e86\u5178", "zh-hant": "\u76db\u4e16\u6176\u5178"}, "incognito": "1", "lang": "en", "min_spin_time": 0, "mobile": "0", "ping_interval": 30, "ping_url": "", "profile": "default", "project_uid": "4509", "provider": "bng", "queue": "201dad53a5fd4ea5bef007fb07359abb", "quickspin": "1", "reality_check_interval": 0, "replay_url": "", "round_expire": 90, "session_idle_timeout": 600, "show_autoplay_menu": "0", "show_compliance_version": "0", "show_game_name": "0", "show_net_position": "0", "show_session_time": "0", "show_time": "0", "show_winnings": "0", "sound": "1", "title": "China Festival", "token": "e7c2dd32-ae50-11ef-a1b6-3a872d1f2d39", "wl": "demo"}, "sentry_url": "//localhost:8080/bng-site-eu/snt/", "static_domains": {"domains_url": "//localhost:8080/bng-site-eu/cdn_domain/", "force_domain": "", "log_url": "//localhost:8080/bng-site-eu/log/china_festival/desktop/measure_checker/demo/", "metric_url": "/static/games/cdn_measure.png", "timeout": 1000}}, "//localhost:8080/bng-site-eu/game/runner_config/");
+</script>
+</body>
+</html>

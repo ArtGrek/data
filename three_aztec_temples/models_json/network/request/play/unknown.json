@@ -1,0 +1,21 @@
+{
+  "action": {
+    "name": "respin",
+    "params": {
+      "bet_factor": 20,
+      "bet_per_line": 1,
+      "lines": 25,
+      "selected_mode": "1"
+    }
+  },
+  "autogame": true,
+  "command": "play",
+  "mobile": "0",
+  "portrait": false,
+  "prev_client_command_time": 71912,
+  "quick_spin": 2,
+  "request_id": "b04a6a2f-275a-40eb-8398-459b3b1851bf",
+  "session_id": "e469cd358c7b434b8194a6901e3c78ca",
+  "set_denominator": 1,
+  "sound": false
+}

@@ -1,0 +1,31 @@
+{
+  "action": {
+    "name": "spin",
+    "params": {
+      "bet_factor": 20,
+      "bet_per_line": 1,
+      "lines": 25,
+      "selected_mode": "1"
+    }
+  },
+  "autogame": true,
+  "command": "login",
+  "game": "3_aztec_temples",
+  "huid": "demo-106758a99a3346fba872f844aa187a8c",
+  "language": "en",
+  "mobile": "0",
+  "mode": "play",
+  "platform": "mob",
+  "playerguid": "9a170a3a-32b3-11f0-9fad-ca43f3bffbbc",
+  "portrait": false,
+  "prev_client_command_time": 282,
+  "prev_request_id": "e170bddc-d869-4a89-b09a-fbbb98903167",
+  "quick_spin": 2,
+  "re-enter": false,
+  "request_id": "28ae5ee1-a824-4634-8358-bcab13e3ce74",
+  "session_id": "04d1923972bc43a9a629302732728d65",
+  "set_denominator": 1,
+  "sound": false,
+  "token": "f5a31d9c-1f50-11f0-b666-76cd92dc3233",
+  "wl": "demo"
+}

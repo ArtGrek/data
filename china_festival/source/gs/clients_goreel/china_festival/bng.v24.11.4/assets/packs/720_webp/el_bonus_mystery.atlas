@@ -1,0 +1,356 @@
+
+el_bonus_mystery.webp
+size: 2028,1090
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+black
+  rotate: false
+  xy: 0, 1011
+  size: 72, 60
+  orig: 72, 60
+  offset: 0, 0
+  index: -1
+border_vfx
+  rotate: false
+  xy: 0, 301
+  size: 200, 240
+  orig: 200, 240
+  offset: 0, 0
+  index: -1
+burn_mystery_01
+  rotate: false
+  xy: 410, 476
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+burn_mystery_02
+  rotate: false
+  xy: 410, 686
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+burn_mystery_03
+  rotate: false
+  xy: 620, 890
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+burn_mystery_04
+  rotate: false
+  xy: 830, 890
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+burn_mystery_05
+  rotate: false
+  xy: 1040, 890
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+burn_mystery_06
+  rotate: false
+  xy: 1250, 890
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+burn_mystery_07
+  rotate: false
+  xy: 1627, 660
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+el_bonus_mystery
+  rotate: false
+  xy: 1420, 660
+  size: 197, 204
+  orig: 200, 240
+  offset: 1, 18
+  index: -1
+glow_back_rect
+  rotate: false
+  xy: 400, 896
+  size: 164, 164
+  orig: 164, 164
+  offset: 0, 0
+  index: -1
+glow_frame
+  rotate: true
+  xy: 1858, 870
+  size: 180, 160
+  orig: 180, 160
+  offset: 0, 0
+  index: -1
+gold_uni
+  rotate: false
+  xy: 1837, 660
+  size: 191, 200
+  orig: 200, 240
+  offset: 3, 25
+  index: -1
+mystery_fire/mystery_fire_00
+  rotate: false
+  xy: 0, 551
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_01
+  rotate: false
+  xy: 504, 0
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_02
+  rotate: false
+  xy: 0, 781
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_03
+  rotate: false
+  xy: 704, 0
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_04
+  rotate: false
+  xy: 904, 0
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_05
+  rotate: false
+  xy: 1104, 0
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_06
+  rotate: false
+  xy: 1304, 0
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_07
+  rotate: false
+  xy: 1504, 0
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_08
+  rotate: false
+  xy: 1704, 0
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_09
+  rotate: false
+  xy: 210, 301
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_10
+  rotate: false
+  xy: 410, 246
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_11
+  rotate: false
+  xy: 610, 230
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_12
+  rotate: false
+  xy: 810, 230
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_13
+  rotate: false
+  xy: 1010, 230
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_14
+  rotate: false
+  xy: 1210, 230
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_15
+  rotate: false
+  xy: 1410, 230
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_16
+  rotate: false
+  xy: 1610, 230
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_17
+  rotate: false
+  xy: 1810, 230
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_18
+  rotate: true
+  xy: 620, 460
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_19
+  rotate: true
+  xy: 850, 460
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_20
+  rotate: true
+  xy: 1080, 460
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_21
+  rotate: true
+  xy: 1310, 460
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_22
+  rotate: true
+  xy: 1540, 460
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_23
+  rotate: true
+  xy: 1770, 460
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_24
+  rotate: false
+  xy: 210, 531
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_25
+  rotate: false
+  xy: 200, 761
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_26
+  rotate: false
+  xy: 620, 660
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_27
+  rotate: false
+  xy: 820, 660
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_28
+  rotate: false
+  xy: 1020, 660
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+mystery_fire/mystery_fire_29
+  rotate: false
+  xy: 1220, 660
+  size: 190, 220
+  orig: 190, 220
+  offset: 0, 0
+  index: -1
+rays
+  rotate: false
+  xy: 1460, 874
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+rect_burst
+  rotate: false
+  xy: 294, 0
+  size: 200, 236
+  orig: 200, 240
+  offset: 0, 1
+  index: -1
+shine_mystery
+  rotate: false
+  xy: 0, 0
+  size: 284, 291
+  orig: 291, 291
+  offset: 0, 0
+  index: -1
+star_1
+  rotate: false
+  xy: 294, 246
+  size: 43, 43
+  orig: 49, 51
+  offset: 3, 4
+  index: -1
+sweep1
+  rotate: true
+  xy: 574, 896
+  size: 59, 14
+  orig: 60, 14
+  offset: 0, 0
+  index: -1
+symbols_center
+  rotate: false
+  xy: 1904, 0
+  size: 37, 180
+  orig: 37, 184
+  offset: 0, 2
+  index: -1
+symbols_side
+  rotate: false
+  xy: 1670, 870
+  size: 178, 182
+  orig: 200, 240
+  offset: 11, 29
+  index: -1

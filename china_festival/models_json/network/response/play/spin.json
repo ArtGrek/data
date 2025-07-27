@@ -1,0 +1,532 @@
+{
+  "command": "play",
+  "context": {
+    "actions": [
+      "spin",
+      "buy_spin"
+    ],
+    "current": "spins",
+    "last_action": "spin",
+    "last_args": {
+      "bet_per_line": 150,
+      "lines": 25
+    },
+    "last_win": 0,
+    "round_finished": true,
+    "spins": {
+      "bac": {
+        "1": [
+          3,
+          0
+        ],
+        "2": [
+          3,
+          0
+        ],
+        "3": [
+          3,
+          0
+        ]
+      },
+      "bac_win": false,
+      "bet_per_line": 150,
+      "board": [
+        [
+          4,
+          3,
+          7
+        ],
+        [
+          8,
+          8,
+          2
+        ],
+        [
+          6,
+          6,
+          5
+        ],
+        [
+          10,
+          10,
+          10
+        ],
+        [
+          3,
+          7,
+          2
+        ]
+      ],
+      "bonus_mechanic": [
+        1,
+        3
+      ],
+      "bs_count": 0,
+      "is_lucky_spin": false,
+      "lines": 25,
+      "paid": false,
+      "round_bet": 3000,
+      "round_win": 0,
+      "spin_type": 0,
+      "total_win": 0,
+      "winlines": [
+        {
+          "amount": 3000,
+          "line": 1,
+          "occurrences": 5,
+          "positions": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "symbol": 1,
+          "type": "lb"
+        },
+        {
+          "amount": 3000,
+          "line": 7,
+          "occurrences": 5,
+          "positions": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "symbol": 1,
+          "type": "lb"
+        },
+        {
+          "amount": 3000,
+          "line": 10,
+          "occurrences": 5,
+          "positions": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "symbol": 1,
+          "type": "lb"
+        },
+        {
+          "amount": 3000,
+          "line": 11,
+          "occurrences": 5,
+          "positions": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "symbol": 1,
+          "type": "lb"
+        },
+        {
+          "amount": 3000,
+          "line": 17,
+          "occurrences": 5,
+          "positions": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "symbol": 1,
+          "type": "lb"
+        },
+        {
+          "amount": 3000,
+          "line": 23,
+          "occurrences": 5,
+          "positions": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "symbol": 1,
+          "type": "lb"
+        },
+        {
+          "amount": 600,
+          "line": 3,
+          "occurrences": 4,
+          "positions": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "symbol": 1,
+          "type": "lb"
+        },
+        {
+          "amount": 600,
+          "line": 4,
+          "occurrences": 4,
+          "positions": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "symbol": 1,
+          "type": "lb"
+        },
+        {
+          "amount": 600,
+          "line": 8,
+          "occurrences": 4,
+          "positions": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "symbol": 1,
+          "type": "lb"
+        },
+        {
+          "amount": 600,
+          "line": 9,
+          "occurrences": 4,
+          "positions": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "symbol": 1,
+          "type": "lb"
+        },
+        {
+          "amount": 600,
+          "line": 12,
+          "occurrences": 4,
+          "positions": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "symbol": 1,
+          "type": "lb"
+        },
+        {
+          "amount": 600,
+          "line": 13,
+          "occurrences": 4,
+          "positions": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "symbol": 1,
+          "type": "lb"
+        },
+        {
+          "amount": 600,
+          "line": 15,
+          "occurrences": 4,
+          "positions": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "symbol": 1,
+          "type": "lb"
+        },
+        {
+          "amount": 600,
+          "line": 18,
+          "occurrences": 4,
+          "positions": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "symbol": 1,
+          "type": "lb"
+        },
+        {
+          "amount": 600,
+          "line": 20,
+          "occurrences": 4,
+          "positions": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "symbol": 1,
+          "type": "lb"
+        },
+        {
+          "amount": 600,
+          "line": 25,
+          "occurrences": 4,
+          "positions": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "symbol": 1,
+          "type": "lb"
+        }
+      ]
+    },
+    "version": 1
+  },
+  "modes": [
+    "auto",
+    "play"
+  ],
+  "origin_data": {
+    "autogame": true,
+    "command": "play",
+    "feature": false,
+    "mobile": "0",
+    "portrait": false,
+    "prev_request_id": "0dcf8e72-6bc6-4411-9c5a-990b4060e741",
+    "quickspin": 2,
+    "set_denominator": 1,
+    "sound": false
+  },
+  "request_id": "c04a7806-4e53-45c3-8968-60147ff379dc",
+  "roundnum": "2505161000003735594",
+  "session_id": "54d657fdddea4c76800b216371ea868e",
+  "status": {
+    "code": "OK",
+    "traceback": "NOT_ENOUGH_MONEY",
+    "type": "exceed",
+    "user_id": -1
+  },
+  "user": {
+    "balance": 97000,
+    "balance_version": 3,
+    "currency": "FUN",
+    "huid": "demo-88fb2ae9a9fb434c9407a6322c941377",
+    "show_balance": true
+  }
+}

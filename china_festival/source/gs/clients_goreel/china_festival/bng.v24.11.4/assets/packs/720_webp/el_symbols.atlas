@@ -1,0 +1,230 @@
+
+el_symbols.webp
+size: 506,917
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+el_01_glow
+  rotate: true
+  xy: 462, 151
+  size: 58, 44
+  orig: 82, 62
+  offset: 11, 10
+  index: -1
+el_01_static
+  rotate: false
+  xy: 298, 637
+  size: 113, 86
+  orig: 156, 130
+  offset: 19, 22
+  index: -1
+el_01_stroke
+  rotate: false
+  xy: 397, 0
+  size: 109, 79
+  orig: 156, 130
+  offset: 21, 27
+  index: -1
+el_02_glow
+  rotate: false
+  xy: 477, 815
+  size: 28, 46
+  orig: 82, 62
+  offset: 27, 9
+  index: -1
+el_02_static
+  rotate: true
+  xy: 397, 89
+  size: 52, 90
+  orig: 156, 130
+  offset: 52, 19
+  index: -1
+el_02_stroke
+  rotate: false
+  xy: 222, 809
+  size: 48, 84
+  orig: 156, 130
+  offset: 54, 23
+  index: -1
+el_03_glow
+  rotate: false
+  xy: 462, 337
+  size: 40, 49
+  orig: 82, 62
+  offset: 21, 6
+  index: -1
+el_03_static
+  rotate: true
+  xy: 298, 733
+  size: 78, 98
+  orig: 156, 130
+  offset: 39, 12
+  index: -1
+el_03_stroke
+  rotate: false
+  xy: 138, 813
+  size: 74, 92
+  orig: 156, 130
+  offset: 41, 16
+  index: -1
+el_04_glow
+  rotate: false
+  xy: 462, 279
+  size: 42, 48
+  orig: 82, 62
+  offset: 20, 8
+  index: -1
+el_04_static
+  rotate: true
+  xy: 280, 821
+  size: 81, 91
+  orig: 156, 130
+  offset: 38, 20
+  index: -1
+el_04_stroke
+  rotate: true
+  xy: 421, 637
+  size: 77, 85
+  orig: 156, 130
+  offset: 40, 24
+  index: -1
+el_05_glow
+  rotate: false
+  xy: 462, 396
+  size: 42, 43
+  orig: 82, 62
+  offset: 20, 11
+  index: -1
+el_05_static
+  rotate: false
+  xy: 381, 821
+  size: 86, 88
+  orig: 156, 130
+  offset: 36, 21
+  index: -1
+el_05_stroke
+  rotate: false
+  xy: 421, 724
+  size: 82, 81
+  orig: 156, 130
+  offset: 38, 26
+  index: -1
+el_06_frame
+  rotate: false
+  xy: 0, 673
+  size: 156, 130
+  orig: 156, 130
+  offset: 0, 0
+  index: -1
+el_06_pic
+  rotate: true
+  xy: 166, 673
+  size: 126, 122
+  orig: 156, 130
+  offset: 16, 3
+  index: -1
+el_06_picglow
+  rotate: false
+  xy: 0, 196
+  size: 172, 158
+  orig: 172, 158
+  offset: 0, 0
+  index: -1
+el_07_frame
+  rotate: true
+  xy: 182, 196
+  size: 156, 130
+  orig: 156, 130
+  offset: 0, 0
+  index: -1
+el_07_pic
+  rotate: false
+  xy: 169, 532
+  size: 114, 127
+  orig: 156, 130
+  offset: 20, 2
+  index: -1
+el_07_picglow
+  rotate: false
+  xy: 215, 0
+  size: 172, 158
+  orig: 172, 158
+  offset: 0, 0
+  index: -1
+el_08_frame
+  rotate: true
+  xy: 182, 362
+  size: 156, 130
+  orig: 156, 130
+  offset: 0, 0
+  index: -1
+el_08_pic
+  rotate: false
+  xy: 322, 500
+  size: 147, 127
+  orig: 156, 130
+  offset: 7, 3
+  index: -1
+el_08_picglow
+  rotate: false
+  xy: 0, 364
+  size: 172, 158
+  orig: 172, 158
+  offset: 0, 0
+  index: -1
+el_09_frame
+  rotate: true
+  xy: 322, 168
+  size: 156, 130
+  orig: 200, 240
+  offset: 22, 55
+  index: -1
+el_09_glow
+  rotate: true
+  xy: 462, 219
+  size: 50, 42
+  orig: 60, 72
+  offset: 5, 15
+  index: -1
+el_09_pic
+  rotate: false
+  xy: 0, 532
+  size: 159, 131
+  orig: 200, 240
+  offset: 20, 60
+  index: -1
+el_09_picglow
+  rotate: false
+  xy: 0, 0
+  size: 205, 186
+  orig: 205, 186
+  offset: 0, 0
+  index: -1
+frame
+  rotate: true
+  xy: 322, 334
+  size: 156, 130
+  orig: 156, 130
+  offset: 0, 0
+  index: -1
+frame_bg
+  rotate: false
+  xy: 0, 813
+  size: 128, 104
+  orig: 128, 104
+  offset: 0, 0
+  index: -1
+particle_1_glow
+  rotate: false
+  xy: 215, 168
+  size: 22, 16
+  orig: 36, 36
+  offset: 7, 10
+  index: -1
+star_1
+  rotate: false
+  xy: 222, 903
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1

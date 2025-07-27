@@ -1,0 +1,139 @@
+
+jackpot_menu_bng.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+coins1
+  rotate: false
+  xy: 618, 189
+  size: 38, 29
+  orig: 38, 29
+  offset: 0, 0
+  index: -1
+coins2
+  rotate: false
+  xy: 557, 182
+  size: 59, 36
+  orig: 59, 36
+  offset: 0, 0
+  index: -1
+coins3
+  rotate: false
+  xy: 658, 189
+  size: 35, 29
+  orig: 35, 29
+  offset: 0, 0
+  index: -1
+coins4
+  rotate: true
+  xy: 932, 383
+  size: 73, 39
+  orig: 73, 39
+  offset: 0, 0
+  index: -1
+cubes1
+  rotate: false
+  xy: 501, 134
+  size: 54, 55
+  orig: 54, 55
+  offset: 0, 0
+  index: -1
+cubes2
+  rotate: false
+  xy: 557, 135
+  size: 46, 45
+  orig: 46, 45
+  offset: 0, 0
+  index: -1
+cubes3
+  rotate: false
+  xy: 440, 121
+  size: 59, 68
+  orig: 59, 68
+  offset: 0, 0
+  index: -1
+diamond
+  rotate: false
+  xy: 720, 361
+  size: 210, 149
+  orig: 210, 149
+  offset: 0, 0
+  index: -1
+dust
+  rotate: false
+  xy: 2, 31
+  size: 436, 158
+  orig: 436, 158
+  offset: 0, 0
+  index: -1
+glow
+  rotate: false
+  xy: 557, 220
+  size: 376, 130
+  orig: 376, 130
+  offset: 0, 0
+  index: -1
+logo
+  rotate: false
+  xy: 720, 358
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+poker_chip1
+  rotate: false
+  xy: 2, 2
+  size: 36, 27
+  orig: 36, 27
+  offset: 0, 0
+  index: -1
+poker_chip1_front
+  rotate: false
+  xy: 40, 3
+  size: 36, 26
+  orig: 36, 26
+  offset: 0, 0
+  index: -1
+poker_chip2
+  rotate: true
+  xy: 488, 2
+  size: 50, 44
+  orig: 50, 44
+  offset: 0, 0
+  index: -1
+poker_chip2_front
+  rotate: true
+  xy: 440, 2
+  size: 50, 46
+  orig: 50, 46
+  offset: 0, 0
+  index: -1
+poker_chip3
+  rotate: false
+  xy: 932, 458
+  size: 65, 52
+  orig: 65, 52
+  offset: 0, 0
+  index: -1
+poker_chip3_front
+  rotate: true
+  xy: 440, 54
+  size: 65, 52
+  orig: 65, 52
+  offset: 0, 0
+  index: -1
+reys
+  rotate: false
+  xy: 2, 191
+  size: 553, 159
+  orig: 553, 159
+  offset: 0, 0
+  index: -1
+stars
+  rotate: false
+  xy: 2, 352
+  size: 716, 158
+  orig: 716, 158
+  offset: 0, 0
+  index: -1

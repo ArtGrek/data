@@ -1,0 +1,17 @@
+{
+  "action": {
+    "name": "bonus_spins_stop",
+    "params": {}
+  },
+  "autogame": true,
+  "command": "play",
+  "mobile": "0",
+  "portrait": false,
+  "prev_client_command_time": 299,
+  "prev_request_id": "4aa94234-c494-4974-9345-5f1bee389809",
+  "quick_spin": 2,
+  "request_id": "07cb604b-d222-4c3d-b898-46b5aee013b3",
+  "session_id": "54d657fdddea4c76800b216371ea868e",
+  "set_denominator": 1,
+  "sound": false
+}
